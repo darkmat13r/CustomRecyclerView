@@ -26,6 +26,7 @@ android {
 repositories {
     google()
     jcenter()
+    jcenter()
     mavenCentral()
     maven { url 'https://jitpack.io' }
 }
@@ -55,6 +56,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     implementation "com.android.support:design:$supportLibVersion"
-
 
 }
