@@ -23,7 +23,11 @@ android {
     }
 
 }
-
+repositories {
+    google()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
 buildscript {
     ext.kotlin_version = '1.2.50'
     repositories {
@@ -46,13 +50,9 @@ ext{
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     implementation "com.android.support:design:$supportLibVersion"
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-}
 
-repositories {
-    google()
 }
